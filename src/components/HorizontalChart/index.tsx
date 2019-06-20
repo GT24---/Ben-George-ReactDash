@@ -77,10 +77,6 @@ export default function HorizontalChart(props: IOwnProps) {
           className="BrushStyling"
           height={15}
           stroke="#8884d8"
-          startIndex={
-            props.labels.length > 500 ? props.visibleData.length - 500 : 0
-          }
-          endIndex={props.visibleData.length - 1}
         />
         <Legend layout="vertical" verticalAlign="top" align="right" />
         {props.labels.map(
