@@ -1,0 +1,40 @@
+@import '../../common/variables';
+
+.HorizontalScrollableChartContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  border-style: solid;
+}
+.HorizontalScrollableChartContainer .header {
+  background-color: $rainydaySky;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.ChartError {
+  color: red;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ChartStatus {
+  color: green;
+  margin-left: 25%;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+}
+.HorizontalResponsiveContainer {
+  flex: 1 1;
+  background-color: rgb(90, 175, 224);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.ChartFont {
+  font-size: small;
+}

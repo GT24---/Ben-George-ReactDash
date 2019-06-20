@@ -1,0 +1,25 @@
+@import "./mixins";
+@import "./variables";
+
+// generalStyles are imported into the main App component
+// so that they can be used and applied in all project wide components.
+// --
+// main-btn is an example of how to use placeholders, mixins, and variables
+// in conjunction with eachother
+.main-btn {
+    @include btn-background($blue4Si);
+}
+
+.modal-form-input {
+    width: 100%;
+}
+
+.hover-delete {
+    &:hover {
+        color: $danger;
+    }
+}
+
+.table {
+    overflow: auto;
+}
